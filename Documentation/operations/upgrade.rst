@@ -406,6 +406,13 @@ Deprecated Options
 * The ``cluster-pool-v2beta`` IPAM mode is deprecated and will be removed in v1.15.
   The functionality to dynamically allocate Pod CIDRs is now provided  by the
   more flexible ``multi-pool`` IPAM mode.
+* The ``kube-proxy-replacement`` option's values ``strict``, ``partial`` and
+  ``disabled`` are deprecated and will be removed in v1.15. They are replaced
+  by ``true`` and ``false``. ``true`` corresponds to ``strict``, i.e. enables
+  all kube-proxy replacement features. ``false`` disables kube-proxy
+  replacement but allows users to selectively enable each kube-proxy replacement
+  feature individually.
+
 
 Deprecated Commands
 ~~~~~~~~~~~~~~~~~~~
